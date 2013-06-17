@@ -34,7 +34,17 @@
 				<?php echo CHtml::link(CHtml::image(Yii::app()->baseUrl . "/css/images/logo.png"), array('site/index')); ?>
 			</div>
              <div class="ad_gg"><img src="css/images/ggc.png" /></div> 
-            <div class="language"><select class="s_language" name="language"><option value="中文">中文</option><option value="English">English</option></select></div>
+            <div class="language">
+				<?php echo CHtml::form(); ?>
+					<?php echo CHtml::dropDownList('lang', Yii::app()->language, array(
+						'cn' => '简体中文',
+				    	'en' => 'English'						),
+						array(
+							"onchange"=>"this.form.submit();"
+						)
+					); ?>
+				<?php echo CHtml::endForm(); ?>
+			</div>
 			<div class="login_info">
 				<a>heli@transn.com</a><i>|</i>
                 <a><?php echo CHtml::link(CHtml::encode(Yii::t('t2b', '帐户管理')), array('user/panel')); ?></a>

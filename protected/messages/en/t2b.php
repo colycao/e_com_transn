@@ -69,6 +69,7 @@ Customer Service Email: kefu@yeedt.com
   '小时' => 'Hour',
   '已付款' => 'Account paid',
   '帐户管理' => 'Account management',
+  '翻译记录' => 'Translation record',
   '开发票' => 'Invoice',
   '当前余额' => 'Current balance',
   '当前账户余额：' => 'Current account balance',
