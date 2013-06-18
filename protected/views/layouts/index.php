@@ -33,7 +33,9 @@
 			<div class="logo">
 				<?php echo CHtml::link(CHtml::image(Yii::app()->baseUrl . "/css/images/logo.png"), array('site/index')); ?>
 			</div>
-             <div class="ad_gg"><img src="css/images/ggc.png" /></div> 
+             <div class="ad_gg">
+				      <?php echo CHtml::image(Yii::app()->baseUrl . "/css/images/ggc.png"); ?>
+             </div> 
             <div class="language">
 				<?php echo CHtml::form(); ?>
 					<?php echo CHtml::dropDownList('lang', Yii::app()->language, array(

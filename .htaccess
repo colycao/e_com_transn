@@ -1,0 +1,8 @@
+options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+DirectoryIndex shouYe.php
+# Rewrite to index.php/URL
+RewriteRule ^(.*)$ shouYe.php/$1 [PT,L]
